@@ -18,6 +18,9 @@
                     <flux:sidebar.item icon="list-bullet" :href="route('items.index')" :current="request()->routeIs('items.index')" wire:navigate>
                         {{ __('Items') }}
                     </flux:sidebar.item>
+                    <flux:sidebar.item icon="list-bullet" :href="route('categories.index')" :current="request()->routeIs('categories.index')" wire:navigate>
+                        {{ __('categories') }}
+                    </flux:sidebar.item>
                 </flux:sidebar.group>
             </flux:sidebar.nav>
 
